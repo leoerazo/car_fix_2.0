@@ -14,6 +14,7 @@ class LoginPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Login'),
         automaticallyImplyLeading: false,
+
       ),
        body:  Center(
         child: Padding(

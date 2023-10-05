@@ -10,21 +10,17 @@ class DetalleClienteScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Detalle Cliente'),
+        title: const Text('Detalle Cliente'),
 
       ),
       body: const Padding(padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Nombre: ', style: TextStyle(fontWeight: FontWeight.bold),),
-          TextField(
-            decoration: InputDecoration(
-              hintText: 'Nombre cliente', hintStyle: TextStyle(fontSize: 12)
-            ),
-          )
-        ],
-      ),),
+          Text('Aqui van Las clases', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),),
+          ],
+        ),
+      ),
     );
   }
 }
