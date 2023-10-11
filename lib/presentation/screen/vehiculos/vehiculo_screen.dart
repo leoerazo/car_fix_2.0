@@ -10,7 +10,7 @@ class VehiculoScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Vehiculo'),
+        title: const Text('Vehiculo'),
       ),
     );
   }

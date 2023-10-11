@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:taller_automotriz/config/menu/menu_items.dart';
 import 'package:taller_automotriz/presentation/screen/login_screen/login_screen.dart';
+import 'package:taller_automotriz/presentation/widget/side_menu.dart';
 
 class HomeScreen extends StatelessWidget {
   static const String name = 'home_screen';
@@ -10,7 +11,10 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final scaffoldkey = GlobalKey<ScaffoldState>();
+
     return Scaffold(
+      
       appBar: AppBar(
         title: const Text('Taller Manager'),
         automaticallyImplyLeading: false, //* Quita el icono de volver que pone el router
@@ -19,7 +23,7 @@ class HomeScreen extends StatelessWidget {
 
 
           PopupMenuButton<String>(
-            icon: Icon(Icons.person),
+            icon: const Icon(Icons.person),
             onSelected: (String result) {
               // Aquí puedes implementar lo que quieres hacer cuando se selecciona un elemento del menú
               print('Has seleccionado $result');
@@ -35,9 +39,9 @@ class HomeScreen extends StatelessWidget {
               ),
                PopupMenuItem<String>(
                 value: 'SingOut',
-                child: Text('SingOut'),
+                child: const Text('SingOut'),
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const LoginPage()));
                 },
               ),
             ],
@@ -54,6 +58,8 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
       ),
+        drawer: SideMenu(scaffoldkey: scaffoldkey),
+
     );
   }
 }
@@ -93,7 +99,7 @@ class _CustomListTile extends StatelessWidget {
       trailing: Icon(Icons.arrow_forward_ios_rounded, color: colors.primary,),
       title: Text(menuItem.title),
       subtitle: Text(menuItem.subTitle),
-      contentPadding: EdgeInsets.all(5),
+      contentPadding: const EdgeInsets.all(5),
       onTap: (){
         //Navigator.of(context).push(
         // MaterialPageRoute(builder: (context) => const ButtonScreen())

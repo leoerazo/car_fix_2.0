@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:taller_automotriz/widget/form_container_widget.dart';
+import 'package:taller_automotriz/presentation/screen/login_screen/login_screen.dart';
+import 'package:taller_automotriz/presentation/widget/form_container_widget.dart';
 
 class SingUpPage extends StatelessWidget {
    const SingUpPage({super.key});
@@ -8,11 +9,12 @@ class SingUpPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: const Text('SingUp'),
       ),
        body:  Center(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 30),
+          padding: const EdgeInsets.symmetric(horizontal: 30),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -60,8 +62,25 @@ class SingUpPage extends StatelessWidget {
                       color: Colors.white, fontWeight: FontWeight.bold),
                       )
                     ),
-              )
+              ),
             //* Boton Sing Up
+
+
+              SizedBox(height: 20,),
+              Row(mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Already have an account?"),
+                  SizedBox(width: 5,),
+                  GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context, MaterialPageRoute(builder: (context) => LoginPage()),);
+                      },
+                      child: Text("Login", style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),))
+                ],
+              )
+              //* Boton para volver al login 
+
 
             ],
           ),

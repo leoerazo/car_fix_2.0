@@ -10,7 +10,7 @@ class OrdenesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Ordenes'),
+        title: const Text('Ordenes'),
       ),
     );
   }

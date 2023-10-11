@@ -9,6 +9,7 @@ class ClienteScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final scaffoldkey = GlobalKey<ScaffoldState>();
     return Scaffold(
       appBar: AppBar(
         title: const Text('Clientes'),
@@ -48,28 +49,8 @@ class ClienteScreen extends StatelessWidget {
 
 
           //? BARRA DE BUSQUEDA CON TEXTFIELD
-                // Padding(
-                //   padding: EdgeInsets.all(10.0), // este es el espacio entre la barra de búsqueda y el borde de la pantalla
-                //   child: TextField(
-                //     decoration: InputDecoration(
-                //         hintText: 'Cliente...',
-                //         contentPadding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0), // esto agrega el padding
-                //         border: OutlineInputBorder(
-                //           borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                //         ),
-                //         enabledBorder: OutlineInputBorder(
-                //           borderSide: BorderSide(color: Colors.blueAccent, width: 1.0),
-                //           borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                //         ),
-                //         focusedBorder: OutlineInputBorder(
-                //           borderSide: BorderSide(color: Colors.blueAccent, width: 2.0),
-                //           borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                //         ),
-                //         prefixIcon: Icon(Icons.search), // esto agrega el ícono de búsqueda dentro de la barra
-                //       ),                  ),
-                // ),
                 Padding(
-                  padding: EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(10),
                   child: SearchBar(
                       padding: 
                         const MaterialStatePropertyAll<EdgeInsets>(
@@ -101,6 +82,7 @@ class ClienteScreen extends StatelessWidget {
 
       ),
     ),
+    //drawer: SideMenu(scaffoldkey: scaffoldkey),
 
     );
   }
