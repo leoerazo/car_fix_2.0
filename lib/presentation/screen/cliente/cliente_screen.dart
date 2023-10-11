@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:taller_automotriz/infraestructures/models/clientes_datos_model.dart';
 import 'package:taller_automotriz/presentation/screen/detalle_cliente/detalle_cliente_screen.dart';
+import 'package:taller_automotriz/presentation/widget/fullscreen_cliente/fullscreen-cliente.dart';
+import 'package:taller_automotriz/presentation/widget/shared/clientes_scrollable.dart';
 
 class ClienteScreen extends StatelessWidget {
 
@@ -10,6 +13,9 @@ class ClienteScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final scaffoldkey = GlobalKey<ScaffoldState>();
+
+    final List<ClientesDatosModel> cliente;
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Clientes'),
@@ -61,17 +67,9 @@ class ClienteScreen extends StatelessWidget {
                           hintText: 'Cliente...',
                     ),
                   ),
-
-                const SingleChildScrollView(
-                    child: Column(
-                      children:[
-                        Padding(padding: EdgeInsets.symmetric(vertical: 10,)),
-                        Text('data'),
-                        Text('data2')
-                      ],
-                    ),
-                    
-                  ),
+                SizedBox(height: 20,),
+                
+                FullScreenPlayer(nombre: 'nombre', dui: 'dui')
                 
               ],
             ),

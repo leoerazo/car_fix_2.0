@@ -66,17 +66,17 @@ class SingUpPage extends StatelessWidget {
             //* Boton Sing Up
 
 
-              SizedBox(height: 20,),
+              const SizedBox(height: 20,),
               Row(mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Already have an account?"),
-                  SizedBox(width: 5,),
+                  const Text("Already have an account?"),
+                  const SizedBox(width: 5,),
                   GestureDetector(
                       onTap: () {
                         Navigator.push(
-                            context, MaterialPageRoute(builder: (context) => LoginPage()),);
+                            context, MaterialPageRoute(builder: (context) => const LoginPage()),);
                       },
-                      child: Text("Login", style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),))
+                      child: const Text("Login", style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),))
                 ],
               )
               //* Boton para volver al login 
