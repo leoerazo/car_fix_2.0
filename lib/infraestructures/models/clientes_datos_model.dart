@@ -20,7 +20,7 @@ class ClientesDatosModel {
         direccion: json['direccion'] ?? 'No direccion',
       );
 
-  ClienteDatos toVideoPostEntity() => ClienteDatos(
+  ClienteDatos toClientesListadoEntity() => ClienteDatos(
         nombre: nombre,
         dui: dui,
         telefono: telefono,

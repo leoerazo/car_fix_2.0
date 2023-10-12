@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter/rendering.dart';
 
 class FullScreenPlayer extends StatefulWidget {
-
   final String nombre;
   final String dui;
 
@@ -10,15 +9,13 @@ class FullScreenPlayer extends StatefulWidget {
     super.key,
     required this.nombre,
     required this.dui,
-    });
+  });
 
   @override
   State<FullScreenPlayer> createState() => _FullScreenPlayerState();
-  
 }
 
 class _FullScreenPlayerState extends State<FullScreenPlayer> {
-
   @override
   void initState() {
     super.initState();
@@ -32,27 +29,222 @@ class _FullScreenPlayerState extends State<FullScreenPlayer> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200,
+      height: 475,
       child: ListView(
-      padding: const EdgeInsets.all(8),
-      children: <Widget>[
-      Container(
-        height: 50,
-        color: Colors.amber[600],
-        child: const Center(child: Text('Entry A')),
+        padding: const EdgeInsets.all(8),
+        children: <Widget>[
+          Container(
+              height: 40,
+              color: Colors.amber[200],
+              child: const Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Text('Don Julio Antonio  Virrey II'),
+                      Text('DUI: 123132')
+                    ],
+                  )
+                ],
+              )),
+          Container(
+              height: 40,
+              color: Colors.amber[500],
+              child: const Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Text('Don Julio Antonio  Virrey II'),
+                      Text('DUI: 123132')
+                    ],
+                  )
+                ],
+              )),
+          Container(
+              height: 40,
+              color: Colors.amber[200],
+              child: const Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Text('Don Julio Antonio  Virrey II'),
+                      Text('DUI: 123132')
+                    ],
+                  )
+                ],
+              )),
+          Container(
+              height: 40,
+              color: Colors.amber[500],
+              child: const Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Text('Don Julio Antonio  Virrey II'),
+                      Text('DUI: 123132')
+                    ],
+                  )
+                ],
+              )),
+          Container(
+              height: 40,
+              color: Colors.amber[500],
+              child: const Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Text('Don Julio Antonio  Virrey II'),
+                      Text('DUI: 123132')
+                    ],
+                  )
+                ],
+              )),
+          Container(
+              height: 40,
+              color: Colors.amber[200],
+              child: const Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Text('Don Julio Antonio  Virrey II'),
+                      Text('DUI: 123132')
+                    ],
+                  )
+                ],
+              )),
+          Container(
+              height: 40,
+              color: Colors.amber[500],
+              child: const Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [Text('Don Julio Bautista'), Text('DUI: 123132')],
+                  )
+                ],
+              )),
+          Container(
+              height: 40,
+              color: Colors.amber[200],
+              child: const Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [Text('Don Julio Bautista'), Text('DUI: 123132')],
+                  )
+                ],
+              )),
+          Container(
+              height: 40,
+              color: Colors.amber[500],
+              child: const Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [Text('Don Julio Bautista'), Text('DUI: 123132')],
+                  )
+                ],
+              )),
+          Container(
+              height: 40,
+              color: Colors.amber[200],
+              child: const Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [Text('Don Julio Bautista'), Text('DUI: 123132')],
+                  )
+                ],
+              )),
+          Container(
+              height: 40,
+              color: Colors.amber[500],
+              child: const Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [Text('Don Julio Bautista'), Text('DUI: 123132')],
+                  )
+                ],
+              )),
+          Container(
+              height: 40,
+              color: Colors.amber[200],
+              child: const Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Text('Don Julio Bautista Segundo del'),
+                      Text('DUI: 8888888')
+                    ],
+                  )
+                ],
+              )),
+          Container(
+              height: 40,
+              color: Colors.amber[500],
+              child: const Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Text('Don Julio Antonio  Virrey II'),
+                      Text('DUI: 123132')
+                    ],
+                  )
+                ],
+              )),
+          Container(
+              height: 40,
+              color: Colors.amber[200],
+              child: const Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Text('Don Julio Antonio  Virrey II'),
+                      Text('DUI: 123132')
+                    ],
+                  )
+                ],
+              )),
+          Container(
+              height: 40,
+              color: Colors.amber[500],
+              child: const Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Text('Don Julio Antonio  Virrey II'),
+                      Text('DUI: 123132')
+                    ],
+                  )
+                ],
+              )),
+        ],
       ),
-      Container(
-        height: 50,
-        color: Colors.amber[500],
-        child: const Center(child: Text('Entry B')),
-      ),
-      Container(
-        height: 50,
-        color: Colors.amber[100],
-        child: const Center(child: Text('Entry C')),
-      ),
-      ],
-    ),
     );
   }
 }
